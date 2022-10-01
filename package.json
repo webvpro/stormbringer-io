@@ -1,0 +1,14 @@
+{
+  "name": "stormbringerdice",
+  "version": "0.0.0",
+  "description": "Hosted 3Ddice from Major 3d Dice and Teal.js adding new ui  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Michael@StrombringerGames.com",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
