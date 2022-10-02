@@ -1,14 +1,20 @@
 {
-  "name": "stormbringerdice",
-  "version": "0.0.0",
-  "description": "Hosted 3Ddice from Major 3d Dice and Teal.js adding new ui  ",
-  "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "author": "Michael@StrombringerGames.com",
-  "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "daisyui": "^2.31.0",
+    "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"
+  },
+  "scripts": {
+    "precompress": "{{ executes BEFORE the `compress` script }}",
+    "compress": "{{ run command to compress files }}",
+    "postcompress": "{{ executes AFTER `compress` script }}",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./public/styles/tailwind.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7"
   }
 }

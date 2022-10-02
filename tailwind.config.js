@@ -1,8 +1,19 @@
-/** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
-  content: [],
+  mode: "jit",
+  content: ["./public/index.html", "./public/dice.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+      },
+    },
   },
-  plugins: [],
-}
+  plugins: [
+    require("daisyui"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
+};

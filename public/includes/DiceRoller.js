@@ -590,7 +590,6 @@ export class DiceRoller {
 			DiceRoller.Teal.socket.close();
 		}
 		DiceRoller.Teal.offline = true;
-
 		DiceRoller.DiceRoom = new DiceRoom('Yourself', -1);
 		DiceRoller.show_waitform(false);
 		requestAnimationFrame(function() {});
